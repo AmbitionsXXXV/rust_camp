@@ -9,6 +9,12 @@ All notable changes to this project will be documented in this file. See [conven
 ### Documentation
 
 - CHANGELOG - ([9b98942](https://github.com/atnoon83/01-rcli/commit/9b98942ab4a28c3dfa685b2779eed1fc7dabd0ac)) - etctera
+- CHANGELOG format - ([3d66a2f](https://github.com/atnoon83/01-rcli/commit/3d66a2f7e4fe6f8dca93bf2b6680d18e5fdc1440)) - etctera
+
+### Miscellaneous Chores
+
+- vscode workspace setting - ([8ea50cc](https://github.com/atnoon83/01-rcli/commit/8ea50cca471eef4bfe9546ef90234609a40a3003)) - etctera
+- github workflow on main - ([df6c4b5](https://github.com/atnoon83/01-rcli/commit/df6c4b5a1f7aa759ae7c47580aa530aadbb40e85)) - etctera
 
 ### Other
 
