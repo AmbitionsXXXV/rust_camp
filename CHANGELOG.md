@@ -11,6 +11,10 @@ All notable changes to this project will be documented in this file. See [conven
 - CHANGELOG - ([9b98942](https://github.com/atnoon83/01-rcli/commit/9b98942ab4a28c3dfa685b2779eed1fc7dabd0ac)) - etctera
 - CHANGELOG format - ([3d66a2f](https://github.com/atnoon83/01-rcli/commit/3d66a2f7e4fe6f8dca93bf2b6680d18e5fdc1440)) - etctera
 
+### Features
+
+- import anyhow to use error convert - ([d861646](https://github.com/atnoon83/01-rcli/commit/d8616463a0bd33bd19a8fe2f6798238cd7943463)) - etctera
+
 ### Miscellaneous Chores
 
 - vscode workspace setting - ([8ea50cc](https://github.com/atnoon83/01-rcli/commit/8ea50cca471eef4bfe9546ef90234609a40a3003)) - etctera
