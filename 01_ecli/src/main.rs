@@ -1,10 +1,12 @@
-use std::{fs, io::Error, path::Path};
+use std::{fs, path::Path};
+
+use anyhow::Result;
 
 // 当不需要传递错误信息时，可以使用 `Result<(), Error>` 作为返回值
-fn main() -> Result<(), Error> {
-    let content = read_file("assets/juventus.csv");
+fn main() -> Result<()> {
+    let content = read_file("assets/juventus.csv")?;
 
-    println!("{:?}", content);
+    println!("{}", content);
     Ok(())
 }
 
@@ -18,9 +20,11 @@ fn main() -> Result<(), Error> {
 //     }
 // }
 
-fn read_file<P>(file_path: P) -> Result<String, Error>
+fn read_file<P>(file_path: P) -> Result<String>
 where
     P: AsRef<Path>,
 {
-    fs::read_to_string(file_path)
+    let content = fs::read_to_string(file_path)?; // err convert to Result
+
+    Ok(content)
 }
