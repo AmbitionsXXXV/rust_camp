@@ -1,21 +1,21 @@
-use anyhow::Result;
-use serde::Deserialize;
+use anyhow::{Ok, Result};
+use serde::{Deserialize, Serialize};
 use std::fs::File;
 
 #[allow(dead_code)]
-#[derive(Debug, Deserialize)]
-struct Player {
+#[derive(Debug, Deserialize, Serialize)]
+pub struct Player {
     // #[serde(rename = "Name")] 属性用于将 CSV 列名映射为结构字段名。
     #[serde(rename = "Name")]
-    name: String,
+    pub name: String,
     #[serde(rename = "Position")]
-    position: String,
+    pub position: String,
     #[serde(rename = "DOB")]
-    dob: String,
+    pub dob: String,
     #[serde(rename = "Nationality")]
-    nationality: String,
+    pub nationality: String,
     #[serde(rename = "Kit Number")]
-    number: u8,
+    pub number: u8,
 }
 
 fn main() -> Result<()> {
@@ -27,11 +27,22 @@ fn main() -> Result<()> {
     for result in reader.deserialize() {
         let player: Player = result?;
 
-        println!(
-            "Name: {}, Position: {}, DOB: {}, Nationality: {}, Number: {}",
-            player.name, player.position, player.dob, player.nationality, player.number,
-        );
+        println!("{:?}", player.to_json()?);
     }
 
     Ok(())
+}
+
+impl Player {
+    pub fn to_json(&self) -> Result<String> {
+        let json = serde_json::to_string(&self)?;
+
+        Ok(json)
+    }
+
+    pub fn from_json(json: &str) -> Result<Player> {
+        let player: Player = serde_json::from_str(json)?;
+
+        Ok(player)
+    }
 }
