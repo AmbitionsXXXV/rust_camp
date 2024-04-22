@@ -3,7 +3,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 ---
+
 ## [unreleased]
+
+### Documentation
+
+- CHANGELOG - ([9b98942](https://github.com/atnoon83/01-rcli/commit/9b98942ab4a28c3dfa685b2779eed1fc7dabd0ac)) - etctera
 
 ### Other
 
