@@ -128,6 +128,9 @@ name = "ecli"
 version = "0.1.0"
 dependencies = [
  "clap",
+ "csv",
+ "serde",
+ "serde_json",
 ]
 
 [[package]]
