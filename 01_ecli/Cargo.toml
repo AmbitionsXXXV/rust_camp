@@ -10,5 +10,6 @@ authors = ["Et cetera <etcetera3636@gmail.com>"]
 [dependencies]
 clap = { version = "4.5.4", features = ["derive"] }
 csv.workspace = true
+anyhow.workspace = true
 serde = { workspace = true, features = ["derive"] }
 serde_json.workspace = true

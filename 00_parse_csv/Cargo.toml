@@ -8,7 +8,7 @@ authors = ["Et cetera <etcetera3636@gmail.com>"]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-anyhow = "1.0.82"
+anyhow.workspace = true
 csv.workspace = true
 serde = { workspace = true, features = ["derive"] }
 serde_json.workspace = true
