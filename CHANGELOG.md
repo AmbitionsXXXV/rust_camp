@@ -9,6 +9,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 - CHANGELOG - ([9b98942](https://github.com/atnoon83/01-rcli/commit/9b98942ab4a28c3dfa685b2779eed1fc7dabd0ac)) - etctera
 - CHANGELOG format - ([3d66a2f](https://github.com/atnoon83/01-rcli/commit/3d66a2f7e4fe6f8dca93bf2b6680d18e5fdc1440)) - etctera
+- CHANGELOG - ([1916b99](https://github.com/atnoon83/01-rcli/commit/1916b9944d7b618cf52f6e1c59f77f8d9eef7ec4)) - etctera
 
 ### Features
 
@@ -16,6 +17,7 @@ All notable changes to this project will be documented in this file. See [conven
 - Add csv and serde dependencies to Cargo.toml - ([ba1e4e9](https://github.com/atnoon83/01-rcli/commit/ba1e4e9d28dc4464b56708ceafb46d31d10af042)) - etctera
 - Add serde_json dependency and implement Player struct serialization and deserialization - ([aff3a56](https://github.com/atnoon83/01-rcli/commit/aff3a5639a043ce30b34d0b4718e794c4452ddf7)) - etctera
 - init command - ([d50f46f](https://github.com/atnoon83/01-rcli/commit/d50f46fe47a277cd88950de6432dda16d4c229f4)) - etctera
+- refactor 01_ecli - ([db36219](https://github.com/atnoon83/01-rcli/commit/db362193b88401cdb48f4bb9903caa5ab2eabb66)) - etctera
 
 ### Miscellaneous Chores
 
