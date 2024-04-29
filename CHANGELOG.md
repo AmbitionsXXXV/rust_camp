@@ -10,6 +10,7 @@ All notable changes to this project will be documented in this file. See [conven
 - CHANGELOG - ([9b98942](https://github.com/atnoon83/01-rcli/commit/9b98942ab4a28c3dfa685b2779eed1fc7dabd0ac)) - etctera
 - CHANGELOG format - ([3d66a2f](https://github.com/atnoon83/01-rcli/commit/3d66a2f7e4fe6f8dca93bf2b6680d18e5fdc1440)) - etctera
 - CHANGELOG - ([1916b99](https://github.com/atnoon83/01-rcli/commit/1916b9944d7b618cf52f6e1c59f77f8d9eef7ec4)) - etctera
+- CHANGELOG - ([e8ba919](https://github.com/atnoon83/01-rcli/commit/e8ba919173c519c6376762afd3aed9f3e50aa70c)) - etctera
 
 ### Features
 
@@ -18,6 +19,9 @@ All notable changes to this project will be documented in this file. See [conven
 - Add serde_json dependency and implement Player struct serialization and deserialization - ([aff3a56](https://github.com/atnoon83/01-rcli/commit/aff3a5639a043ce30b34d0b4718e794c4452ddf7)) - etctera
 - init command - ([d50f46f](https://github.com/atnoon83/01-rcli/commit/d50f46fe47a277cd88950de6432dda16d4c229f4)) - etctera
 - refactor 01_ecli - ([db36219](https://github.com/atnoon83/01-rcli/commit/db362193b88401cdb48f4bb9903caa5ab2eabb66)) - etctera
+- Refactor code structure and import statements in 01_ecli - ([a533515](https://github.com/atnoon83/01-rcli/commit/a53351583f72a8a568c33b63680a1b30aae49776)) - etctera
+- Add .gitignore rule for output files and update cSpell dictionary - ([b23ae67](https://github.com/atnoon83/01-rcli/commit/b23ae6773ab912bbaadf4a87f7c9ad8cb6c0e0da)) - etctera
+- Refactor CSV processing logic and add support for different output formats - ([353c8c2](https://github.com/atnoon83/01-rcli/commit/353c8c250ce5ee45a850cf1a39d0051ab119410c)) - etctera
 
 ### Miscellaneous Chores
 
