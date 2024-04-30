@@ -63,6 +63,7 @@ pub struct CsvOpts {
     #[arg(short, long)]
     pub output: Option<String>,
 
+    /// Output format, default is json, supported formats: json, yaml, toml
     #[arg(long, value_parser = parse_format, default_value = "json")]
     pub format: OutputFormat,
 
