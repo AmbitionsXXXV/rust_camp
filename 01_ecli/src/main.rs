@@ -1,6 +1,6 @@
 use anyhow::{Ok, Result};
 use clap::Parser;
-use ecli::{process_csv, Opts, SubCommand};
+use ecli::{process_csv, process_gen_pass, Opts, SubCommand};
 
 fn main() -> Result<()> {
     let opts = Opts::parse();
@@ -14,6 +14,17 @@ fn main() -> Result<()> {
             };
 
             process_csv(&opts.input, output, opts.format)?
+        }
+        SubCommand::GenPass(opts) => {
+            let pass = process_gen_pass(
+                opts.length,
+                opts.uppercase,
+                opts.lowercase,
+                opts.number,
+                opts.symbol,
+            )?;
+
+            println!("{}", pass);
         }
     }
 
