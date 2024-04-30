@@ -6,6 +6,7 @@ use std::{fmt, path::Path, str::FromStr};
 pub enum OutputFormat {
     Json,
     Yaml,
+    Toml,
 }
 
 impl From<OutputFormat> for &'static str {
@@ -13,6 +14,7 @@ impl From<OutputFormat> for &'static str {
         match format {
             OutputFormat::Json => "json",
             OutputFormat::Yaml => "yaml",
+            OutputFormat::Toml => "toml",
         }
     }
 }
@@ -24,6 +26,7 @@ impl FromStr for OutputFormat {
         match s {
             "json" => Ok(OutputFormat::Json),
             "yaml" => Ok(OutputFormat::Yaml),
+            "toml" => Ok(OutputFormat::Toml),
             _ => anyhow::bail!("Invalid format: {}", s),
         }
     }
