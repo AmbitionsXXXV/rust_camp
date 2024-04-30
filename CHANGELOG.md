@@ -11,6 +11,7 @@ All notable changes to this project will be documented in this file. See [conven
 - CHANGELOG format - ([3d66a2f](https://github.com/atnoon83/01-rcli/commit/3d66a2f7e4fe6f8dca93bf2b6680d18e5fdc1440)) - etctera
 - CHANGELOG - ([1916b99](https://github.com/atnoon83/01-rcli/commit/1916b9944d7b618cf52f6e1c59f77f8d9eef7ec4)) - etctera
 - CHANGELOG - ([e8ba919](https://github.com/atnoon83/01-rcli/commit/e8ba919173c519c6376762afd3aed9f3e50aa70c)) - etctera
+- change log - ([6294ef8](https://github.com/atnoon83/01-rcli/commit/6294ef8f0372ceebd5e3702e61ba5ab290fce20b)) - etctera
 
 ### Features
 
@@ -22,6 +23,7 @@ All notable changes to this project will be documented in this file. See [conven
 - Refactor code structure and import statements in 01_ecli - ([a533515](https://github.com/atnoon83/01-rcli/commit/a53351583f72a8a568c33b63680a1b30aae49776)) - etctera
 - Add .gitignore rule for output files and update cSpell dictionary - ([b23ae67](https://github.com/atnoon83/01-rcli/commit/b23ae6773ab912bbaadf4a87f7c9ad8cb6c0e0da)) - etctera
 - Refactor CSV processing logic and add support for different output formats - ([353c8c2](https://github.com/atnoon83/01-rcli/commit/353c8c250ce5ee45a850cf1a39d0051ab119410c)) - etctera
+- Refactor CSV processing logic, add support for Toml output formats, and update dependencies - ([3c75682](https://github.com/atnoon83/01-rcli/commit/3c7568205283ab451fe4dbc75cdc8a51f538fdcb)) - etctera
 
 ### Miscellaneous Chores
 
@@ -30,6 +32,8 @@ All notable changes to this project will be documented in this file. See [conven
 - change mem name - ([407fe70](https://github.com/atnoon83/01-rcli/commit/407fe70e34b8c6489632461a7a4be1c5b0684b15)) - etctera
 - workspace dependencies - ([cc2f89b](https://github.com/atnoon83/01-rcli/commit/cc2f89bea1f47083b714f98fb6e6da7d3d8499ad)) - etctera
 - workspace dependencies - ([e18a441](https://github.com/atnoon83/01-rcli/commit/e18a44187bcaeb694747c7ca25289d7025940f85)) - etctera
+- Update player information in output.json - ([084cb79](https://github.com/atnoon83/01-rcli/commit/084cb79681b8be56fe3cab355c1afa261363d0b5)) - etctera
+- remove comment - ([65043c8](https://github.com/atnoon83/01-rcli/commit/65043c88ebb2c1d01c068c968f7327d8ae83c5ab)) - etctera
 
 ### Other
 
