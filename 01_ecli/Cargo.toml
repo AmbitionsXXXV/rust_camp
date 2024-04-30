@@ -17,3 +17,4 @@ serde_yaml = "0.9.34"
 toml = "0.8.12"
 uuid = { version = "1.8.0", features = ["v4"] }
 rand = "0.8.5"
+zxcvbn = "2.2.2"

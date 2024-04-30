@@ -1,6 +1,7 @@
 use anyhow::{Ok, Result};
 use clap::Parser;
 use ecli::{process_csv, process_gen_pass, Opts, SubCommand};
+use zxcvbn::zxcvbn;
 
 fn main() -> Result<()> {
     let opts = Opts::parse();
@@ -23,6 +24,10 @@ fn main() -> Result<()> {
                 opts.number,
                 opts.symbol,
             )?;
+
+            // 验证密码强度
+            let estimate = zxcvbn(&pass, &[])?;
+            eprintln!("Password strength: {}", estimate.score());
 
             println!("{}", pass);
         }
