@@ -23,7 +23,7 @@ pub enum SubCommand {
     #[command(name = "genpass", about = "Generate a random password")]
     GenPass(GenPassOpts),
 
-    #[command(name = "base64", about = "Base64 encode/decode")]
+    #[command(subcommand, about = "Base64 encode/decode")]
     Base64(Base64SubCommand),
 }
 
