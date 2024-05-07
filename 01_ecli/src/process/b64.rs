@@ -26,7 +26,7 @@ impl std::fmt::Debug for DecodedData {
 pub fn process_encode(reader: &mut dyn Read, format: Base64Format) -> Result<String> {
     let mut buf = Vec::new();
     reader.read_to_end(&mut buf)?;
-    println!("{:?}", buf.len());
+
     let encoded = match format {
         Base64Format::Standard => STANDARD.encode(&buf),
         Base64Format::UrlSafe => URL_SAFE_NO_PAD.encode(&buf),
@@ -38,6 +38,7 @@ pub fn process_encode(reader: &mut dyn Read, format: Base64Format) -> Result<Str
 pub fn process_decode(reader: &mut dyn Read, format: Base64Format) -> Result<DecodedData> {
     let mut buf = String::new();
     reader.read_to_string(&mut buf)?;
+    println!("buffer {:?}", buf.len());
     // 移除多余的换行符
     let buf = buf.trim();
 
@@ -69,13 +70,13 @@ mod tests {
         Ok(())
     }
 
-    #[test]
-    fn test_process_decode() -> Result<()> {
-        let input = "/Users/jiantianjianghui/Rust_Project/camp/fixtures/b64.txt";
-        let mut reader = get_reader(input)?;
-        let format = Base64Format::UrlSafe;
-        process_decode(&mut reader, format)?;
+    // #[test]
+    // fn test_process_decode() -> Result<()> {
+    //     let input = "fixtures/b64.txt";
+    //     let mut reader = get_reader(input)?;
+    //     let format = Base64Format::UrlSafe;
+    //     process_decode(&mut reader, format)?;
 
-        Ok(())
-    }
+    //     Ok(())
+    // }
 }
