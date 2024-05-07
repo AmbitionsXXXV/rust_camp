@@ -35,3 +35,16 @@ fn verify_file(filename: &str) -> Result<String, &'static str> {
         Err("File does not exist")
     }
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_verify_input_file() {
+        assert_eq!(verify_file("-"), Ok("-".into()));
+        assert_eq!(verify_file("*"), Err("File does not exist"));
+        assert_eq!(verify_file("Cargo.toml"), Ok("Cargo.toml".into()));
+        assert_eq!(verify_file("not-exist"), Err("File does not exist"));
+    }
+}
