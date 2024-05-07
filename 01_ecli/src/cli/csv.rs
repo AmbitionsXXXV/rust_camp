@@ -1,9 +1,13 @@
-use std::{fmt, str::FromStr};
-
-use crate::OutputFormat;
-
 use super::verify_input_file;
 use clap::{ArgAction, Parser};
+use std::{fmt, str::FromStr};
+
+#[derive(Debug, Clone, Copy)]
+pub enum OutputFormat {
+    Json,
+    Yaml,
+    Toml,
+}
 
 /// CSV options
 #[derive(Debug, Parser)]

@@ -3,8 +3,9 @@ use clap::Parser;
 use std::path::Path;
 
 mod csv;
+mod genpass;
 
-pub use self::csv::*;
+pub use self::{csv::*, genpass::*};
 
 #[derive(Debug, Parser)]
 #[command(name="ecli",version,author,about,long_about=None)]
@@ -26,32 +27,7 @@ pub enum SubCommand {
 }
 
 #[derive(Debug, Parser)]
-pub struct GenPassOpts {
-    #[arg(short, long, default_value_t = 16)]
-    pub length: u8,
-
-    #[arg(long, default_value_t = true)]
-    pub uppercase: bool,
-
-    #[arg(long, default_value_t = true)]
-    pub lowercase: bool,
-
-    #[arg(long, default_value_t = true)]
-    pub number: bool,
-
-    #[arg(long, default_value_t = true)]
-    pub symbol: bool,
-}
-
-#[derive(Debug, Parser)]
 pub struct Base64SubCommand;
-
-#[derive(Debug, Clone, Copy)]
-pub enum OutputFormat {
-    Json,
-    Yaml,
-    Toml,
-}
 
 fn verify_input_file(file_name: &str) -> Result<String, &'static str> {
     if Path::new(file_name).exists() {
