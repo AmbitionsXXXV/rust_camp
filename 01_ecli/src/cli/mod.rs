@@ -2,10 +2,11 @@ use anyhow::Result;
 use clap::Parser;
 use std::path::Path;
 
+mod base64;
 mod csv;
 mod genpass;
 
-pub use self::{csv::*, genpass::*};
+pub use self::{base64::*, csv::*, genpass::*};
 
 #[derive(Debug, Parser)]
 #[command(name="ecli",version,author,about,long_about=None)]
@@ -25,9 +26,6 @@ pub enum SubCommand {
     #[command(name = "base64", about = "Base64 encode/decode")]
     Base64(Base64SubCommand),
 }
-
-#[derive(Debug, Parser)]
-pub struct Base64SubCommand;
 
 fn verify_input_file(file_name: &str) -> Result<String, &'static str> {
     if Path::new(file_name).exists() {
