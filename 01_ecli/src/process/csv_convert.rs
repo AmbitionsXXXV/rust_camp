@@ -3,7 +3,7 @@ use csv::Reader;
 use std::{collections::HashMap, fs};
 use uuid::Uuid;
 
-use crate::opts::OutputFormat;
+use crate::cli::OutputFormat;
 
 pub fn process_csv(input: &str, output: String, format: OutputFormat) -> Result<()> {
     let mut rdr = Reader::from_path(input)?;

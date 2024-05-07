@@ -31,6 +31,9 @@ fn main() -> Result<()> {
 
             println!("{}", pass);
         }
+        SubCommand::Base64(_) => {
+            todo!()
+        }
     }
 
     Ok(())
