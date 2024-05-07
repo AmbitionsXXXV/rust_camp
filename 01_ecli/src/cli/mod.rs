@@ -27,9 +27,10 @@ pub enum SubCommand {
     Base64(Base64SubCommand),
 }
 
-fn verify_input_file(file_name: &str) -> Result<String, &'static str> {
-    if Path::new(file_name).exists() {
-        Ok(file_name.into())
+fn verify_file(filename: &str) -> Result<String, &'static str> {
+    // if input is "-" or file exists
+    if filename == "-" || Path::new(filename).exists() {
+        Ok(filename.into())
     } else {
         Err("File does not exist")
     }

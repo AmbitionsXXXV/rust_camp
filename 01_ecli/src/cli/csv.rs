@@ -1,4 +1,4 @@
-use super::verify_input_file;
+use super::verify_file;
 use clap::{ArgAction, Parser};
 use std::{fmt, str::FromStr};
 
@@ -14,7 +14,7 @@ pub enum OutputFormat {
 #[clap(name = "CSV Options", author, version, about = "Convert CSV to JSON")]
 pub struct CsvOpts {
     /// Input CSV file, value_parser 参数指定验证函数
-    #[arg(short, long, value_parser = verify_input_file)]
+    #[arg(short, long, value_parser = verify_file)]
     pub input: String,
 
     /// Output JSON file, optionalq
