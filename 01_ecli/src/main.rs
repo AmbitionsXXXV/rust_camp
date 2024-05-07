@@ -1,6 +1,6 @@
 use anyhow::{Ok, Result};
 use clap::Parser;
-use ecli::{process_csv, process_gen_pass, Opts, SubCommand};
+use ecli::{process_csv, process_gen_pass, Base64SubCommand, Opts, SubCommand};
 use zxcvbn::zxcvbn;
 
 fn main() -> Result<()> {
@@ -31,9 +31,14 @@ fn main() -> Result<()> {
 
             println!("{}", pass);
         }
-        SubCommand::Base64(_) => {
-            todo!()
-        }
+        SubCommand::Base64(subcmd) => match subcmd {
+            Base64SubCommand::Encode(opts) => {
+                println!("encode: {:?}", opts);
+            }
+            Base64SubCommand::Decode(opts) => {
+                println!("decode: {:?}", opts);
+            }
+        },
     }
 
     Ok(())
