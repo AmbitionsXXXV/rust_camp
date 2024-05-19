@@ -31,6 +31,7 @@ All notable changes to this project will be documented in this file. See [conven
 - Add base64 encode and decode functionality - ([22e6762](https://github.com/AmbitionsXXXV/rust_camp/commit/22e6762479a4cb7a51840c640cdd68a3ca849884)) - etctera
 - Refactor file verification in CLI subcommands - ([ff30244](https://github.com/AmbitionsXXXV/rust_camp/commit/ff3024432e24faa43cf7a6bef807f136e71cd10d)) - etctera
 - Refactor file verification in CLI subcommands - ([f488674](https://github.com/AmbitionsXXXV/rust_camp/commit/f488674ce3caa69f5a987d74c50ba345635b3e25)) - etctera
+- Add process_encode and process_decode functions for base64 functionality - ([57d50ad](https://github.com/AmbitionsXXXV/rust_camp/commit/57d50ad1852e8d2568f397d1daa7be5343a78131)) - etcetera
 
 ### Miscellaneous Chores
 
@@ -42,6 +43,7 @@ All notable changes to this project will be documented in this file. See [conven
 - Update player information in output.json - ([084cb79](https://github.com/AmbitionsXXXV/rust_camp/commit/084cb79681b8be56fe3cab355c1afa261363d0b5)) - etctera
 - remove comment - ([65043c8](https://github.com/AmbitionsXXXV/rust_camp/commit/65043c88ebb2c1d01c068c968f7327d8ae83c5ab)) - etctera
 - Add support for different output formats in CsvOpts struct - ([a3f0b24](https://github.com/AmbitionsXXXV/rust_camp/commit/a3f0b24b4112e847e4ac9958c26b5b293d50a8ee)) - etctera
+- CHANGELOG - ([ac26835](https://github.com/AmbitionsXXXV/rust_camp/commit/ac26835422cf6d7f437f0966988353399884ad26)) - etcetera
 
 ### Other
 
