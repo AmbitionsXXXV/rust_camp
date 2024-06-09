@@ -5,8 +5,9 @@ use std::path::Path;
 mod base64;
 mod csv;
 mod genpass;
+mod text;
 
-pub use self::{base64::*, csv::*, genpass::*};
+pub use self::{base64::*, csv::*, genpass::*, text::*};
 
 #[derive(Debug, Parser)]
 #[command(name="ecli",version,author,about,long_about=None)]
